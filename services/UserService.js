@@ -235,4 +235,12 @@ const getUsers = async () => {
   return users;
 };
 
-module.exports = { getUsers };
+const getUserById = async (id) => {
+  let user;
+  users.forEach((currentUser) => {
+    if (currentUser.id === id) user = currentUser;
+  });
+  return user;
+};
+
+module.exports = { getUsers, getUserById };
