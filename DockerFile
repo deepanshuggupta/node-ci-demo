@@ -5,4 +5,5 @@ echo "-------------- Start Build ---------------"
 # RUN mkdir -p /home/app/node_modules && chown -R node:node /home/node/app
 
 
-echo "-------------- End Build ---------------"
+echo "-------------- End Build ----------------"
+ 
