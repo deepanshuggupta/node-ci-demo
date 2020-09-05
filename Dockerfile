@@ -1,9 +1,16 @@
-echo "-------------- Start Build ---------------"
+FROM node:12
 
-# FROM node:12.18.3-alpine3.10
+# create app directory
+WORKDIR /user/src/app
 
-# RUN mkdir -p /home/app/node_modules && chown -R node:node /home/node/app
+# Install all dependencies 
+COPY package*.json ./
 
+RUN npm install
 
-echo "-------------- End Build ----------------"
- 
+# Copy app source
+COPY . .
+EXPOSE 8080
+
+CMD ["npm", "start"]
+
