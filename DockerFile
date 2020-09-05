@@ -1,4 +1,8 @@
+echo "-------------- Start Build ---------------"
+
 # FROM node:12.18.3-alpine3.10
 
 # RUN mkdir -p /home/app/node_modules && chown -R node:node /home/node/app
 
+
+echo "-------------- End Build ---------------"
